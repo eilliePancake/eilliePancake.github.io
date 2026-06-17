@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elizabeth Pan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">EP</span>
+    <ul>
+      <li><a href="#about"   data-en="About"      data-zh="关于">About</a></li>
+      <li><a href="#experience" data-en="Experience" data-zh="经历">Experience</a></li>
+      <li><a href="#map"     data-en="World"      data-zh="足迹">World</a></li>
+      <li><a href="#skills"  data-en="Skills"     data-zh="技能">Skills</a></li>
+      <li><a href="#education" data-en="Education" data-zh="教育">Education</a></li>
+      <li><a href="#contact" data-en="Contact"    data-zh="联系">Contact</a></li>
+    </ul>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">中文</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-tag"
+         data-en="Intelligent Perception Engineering · SJTU · 2nd Year"
+         data-zh="智能感知工程 · 上海交通大学 · 大二">
+        Intelligent Perception Engineering · SJTU · 2nd Year
+      </p>
+      <h1>Elizabeth<br /><em>Pan</em></h1>
+      <p class="hero-nickname">Eillie</p>
+      <p class="hero-bio"
+         data-en="I navigate between circuits and code, between engineering and art — curious about how machines learn to perceive the world the way humans do. Trilingual by upbringing, technical by training, and quietly obsessed with the intersection of AI architecture and real-world systems. When I'm not debugging models, I'm at the piano — or on a slope."
+         data-zh="在电路和代码之间来回，在工程和艺术之间游走——我最好奇的事情，一直是机器怎么学会感知这个世界。三种语言长大，理工科训练出来，脑子里总有一块地方在想 AI 架构和真实系统怎么接上头。不调模型的时候，不是在弹琴，就是在雪坡上。">
+        I navigate between circuits and code, between engineering and art —
+        curious about how machines learn to perceive the world the way humans do.
+        Trilingual by upbringing, technical by training, and quietly obsessed
+        with the intersection of AI architecture and real-world systems.
+        When I'm not debugging models, I'm at the piano — or on a slope.
+      </p>
+      <a href="#about" class="hero-cta"
+         data-en="Discover more ↓"
+         data-zh="了解更多 ↓">Discover more ↓</a>
+    </div>
+    <div class="hero-photo-wrap">
+      <img src="c53295caa95b7f30d4813e55873e46c7.jpg" alt="Elizabeth as a child" class="hero-photo" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label" data-en="01 / About" data-zh="01 / 关于我">01 / About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 data-en="Who I am" data-zh="我是谁">Who I am</h2>
+        <p data-en="I'm Elizabeth Pan — known as <strong>Eillie</strong> to the people I work and create with. Born into three languages and raised across continents, I arrived at Shanghai Jiao Tong University's Intelligent Perception Engineering program with one driving question: <em>how do machines begin to understand the world?</em>"
+           data-zh="我叫潘朵拉，朋友都叫我 <strong>Eillie</strong>。三种语言同时长大，辗转两个大洲，最后带着一个问题进了上海交通大学智能感知工程专业：<em>机器到底是怎么开始理解这个世界的？</em>">
+          I'm Elizabeth Pan — known as <strong>Eillie</strong> to the people I work
+          and create with. Born into three languages and raised across continents,
+          I arrived at Shanghai Jiao Tong University's Intelligent Perception
+          Engineering program with one driving question: <em>how do machines begin
+          to understand the world?</em>
+        </p>
+        <p data-en="I'm a second-year student who moves comfortably between the rigor of circuit theory and the ambiguity of early-stage AI research. My work at WolkenVision has given me a rare window into how large-model architectures translate from academic papers into investment-grade technical strategy."
+           data-zh="大二，在电路理论的严谨和 AI 研究的模糊地带之间来回横跳。在 WolkenVision 实习让我第一次近距离看到：一篇学术 paper 里的架构，怎么变成一份能让投资人看懂的技术报告。">
+          I'm a second-year student who moves comfortably between the rigor of
+          circuit theory and the ambiguity of early-stage AI research. My work
+          at WolkenVision has given me a rare window into how large-model
+          architectures translate from academic papers into investment-grade
+          technical strategy.
+        </p>
+        <p data-en="Outside of engineering, I'm a competitive skier, a pianist who has performed for 600-person audiences, and a poetry recitation finalist. I tend to think that the same instinct that shapes a good phrase also shapes a clean architecture diagram."
+           data-zh="工程以外，我滑雪，弹钢琴，曾经给 600 人现场演奏过，也拿过诗歌朗诵全国前八。我觉得写好一句话和画好一张架构图，其实是同一种感觉。">
+          Outside of engineering, I'm a competitive skier, a pianist who has
+          performed for 600-person audiences, and a poetry recitation finalist.
+          I tend to think that the same instinct that shapes a good phrase also
+          shapes a clean architecture diagram.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label" data-en="Languages" data-zh="语言">Languages</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">TOEFL<br/>111</span>
+          <span class="stat-label" data-en="English Score" data-zh="英语成绩">English Score</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3×</span>
+          <span class="stat-label" data-en="Competition Top Placements" data-zh="竞赛前列">Competition<br/>Top Placements</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">600+</span>
+          <span class="stat-label" data-en="Audience at Piano Performance" data-zh="钢琴演奏观众">Audience at<br/>Piano Performance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label" data-en="02 / Experience" data-zh="02 / 工作经历">02 / Experience</div>
+    <h2 data-en="Where I've worked" data-zh="我工作过的地方">Where I've worked</h2>
+    <div class="exp-list">
+
+      <div class="exp-item featured">
+        <div class="exp-meta">
+          <span class="exp-company">WolkenVision</span>
+          <span class="exp-period">2025 – Present</span>
+        </div>
+        <div class="exp-role"
+             data-en="Technical Architecture Analyst · AI/AEC Internship"
+             data-zh="技术架构分析师 · AI/建筑科技实习">
+          Technical Architecture Analyst · AI/AEC Internship
+        </div>
+        <div class="exp-desc">
+          <p data-en="Supporting the company's financing stage by producing technical architecture analysis for investors and leadership. My key output — a comparative study of Multimodal Large Language Models (MLLM) and Large Engineering Models (LEM) — mapped how AI architectures can be extended to BIM (Building Information Modeling) data, a domain where tokenization remains an open research problem."
+             data-zh="在融资阶段负责技术架构的梳理和解析，核心产出是一份《多模态大模型（MLLM）与大工程模型（LEM）技术架构对比》——把 AI 架构怎么延伸到 BIM（建筑信息模型）这件事，从头理了一遍。BIM 的 Tokenization 到现在还没有成熟方案，算是真正的前沿问题。">
+            Supporting the company's financing stage by producing technical
+            architecture analysis for investors and leadership. My key output —
+            a comparative study of Multimodal Large Language Models (MLLM) and
+            Large Engineering Models (LEM) — mapped how AI architectures can be
+            extended to BIM (Building Information Modeling) data, a domain where
+            tokenization remains an open research problem.
+          </p>
+          <p data-en="The work covers end-to-end pipeline design across text, image, video, and 3D engineering modalities, and evaluates generation frameworks (diffusion, autoregressive, VQ-VAE, template deformation) against the constraints of real-world structural validation."
+             data-zh="覆盖文本、图像、视频、3D 工程数据的端到端管线设计，横向对比了扩散模型、自回归生成、VQ-VAE、模板形变这几条路，用结构验证约束做基准评估。">
+            The work covers end-to-end pipeline design across text, image, video,
+            and 3D engineering modalities, and evaluates generation frameworks
+            (diffusion, autoregressive, VQ-VAE, template deformation) against
+            the constraints of real-world structural validation.
+          </p>
+        </div>
+        <div class="exp-tags">
+          <span>MLLM</span><span>LEM</span><span>BIM</span><span>AI Architecture</span><span>Technical Strategy</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <span class="exp-company">Montreal University Hospital Center (CHUM)</span>
+          <span class="exp-period">Jun–Aug 2023 · Jun–Aug 2024</span>
+        </div>
+        <div class="exp-role"
+             data-en="Administrative Agent"
+             data-zh="行政协调员">Administrative Agent</div>
+        <div class="exp-desc"
+             data-en="Facilitated doctor-patient communication in a high-stakes multilingual environment, ensuring accuracy and timeliness of clinical information delivery."
+             data-zh="在高压多语言医疗环境中协调医患沟通，确保临床信息的准确传递与及时性。">
+          Facilitated doctor-patient communication in a high-stakes multilingual
+          environment, ensuring accuracy and timeliness of clinical information delivery.
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <span class="exp-company">Tutorat Pro</span>
+          <span class="exp-period">Aug 2022 – May 2024</span>
+        </div>
+        <div class="exp-role"
+             data-en="Science Tutor"
+             data-zh="理科家教">Science Tutor</div>
+        <div class="exp-desc"
+             data-en="Designed personalized science curricula; students improved grades by an average of 20% with an 85% renewal rate."
+             data-zh="设计个性化理科课程方案；学生平均成绩提升 20%，续课率达 85%。">
+          Designed personalized science curricula; students improved grades by an
+          average of 20% with an 85% renewal rate.
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <span class="exp-company">Brébeuf Bookstore Cooperative</span>
+          <span class="exp-period">Oct 2022 – May 2024</span>
+        </div>
+        <div class="exp-role"
+             data-en="Finance Director (Volunteer)"
+             data-zh="财务总监（志愿者）">Finance Director (Volunteer)</div>
+        <div class="exp-desc"
+             data-en="Managed profit allocation for a student non-profit, overseeing budgeting, expense monitoring, and resource optimization to maximize member benefits."
+             data-zh="负责学生非营利组织的利润分配管理，统筹预算编制、支出监控与资源优化，以最大化成员权益。">
+          Managed profit allocation for a student non-profit, overseeing budgeting,
+          expense monitoring, and resource optimization to maximize member benefits.
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <span class="exp-company">Liberal Party of Canada</span>
+          <span class="exp-period">2019 · 2021–2023</span>
+        </div>
+        <div class="exp-role"
+             data-en="Voter Contact Agent"
+             data-zh="选民联络专员">Voter Contact Agent</div>
+        <div class="exp-desc"
+             data-en="Communicated with 300+ voters in English and French, distilling and delivering core policy messaging with precision."
+             data-zh="以英法双语与 300 余名选民沟通，精准传递核心政策信息。">
+          Communicated with 300+ voters in English and French, distilling and
+          delivering core policy messaging with precision.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section id="map">
+    <div class="section-label" data-en="03 / My World" data-zh="03 / 我的足迹">03 / My World</div>
+    <h2 data-en="Cities that shaped me" data-zh="那些塑造过我的城市">Cities that shaped me</h2>
+    <p class="map-hint" data-en="Hover over a pin to see each city." data-zh="把鼠标移到图钉上，看看每座城市的故事。">
+      Hover over a pin to see each city.
+    </p>
+    <div id="world-map" style="width:100%;height:420px;"></div>
+  </section>
+
+  <!-- floating city card — lives outside section so it can overlay everything -->
+  <div id="city-card" class="city-card" aria-hidden="true">
+    <img id="city-card-img" src="" alt="" />
+    <div class="city-card-body">
+      <div id="city-card-name" class="city-card-name"></div>
+      <div id="city-card-text" class="city-card-text"></div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label" data-en="04 / Skills" data-zh="04 / 技能">04 / Skills</div>
+    <h2 data-en="What I bring" data-zh="我能带来什么">What I bring</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3 data-en="Technical" data-zh="技术">Technical</h3>
+        <ul>
+          <li data-en="C++ Programming" data-zh="C++ 编程">C++ Programming</li>
+          <li data-en="Circuit Theory &amp; Digital Electronics" data-zh="电路理论与数字电子">Circuit Theory &amp; Digital Electronics</li>
+          <li data-en="AI Architecture Analysis" data-zh="AI 架构分析">AI Architecture Analysis</li>
+          <li data-en="Microsoft Office Suite" data-zh="Microsoft Office 全套">Microsoft Office Suite</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 data-en="Languages" data-zh="语言">Languages</h3>
+        <ul>
+          <li data-en="French — Native" data-zh="法语 — 母语">French — Native</li>
+          <li data-en="Chinese — Native" data-zh="中文 — 母语">Chinese — Native</li>
+          <li data-en="English — TOEFL 111" data-zh="英语 — 托福 111">English — TOEFL 111</li>
+          <li data-en="Spanish — Basic" data-zh="西班牙语 — 基础">Spanish — Basic</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 data-en="Awards" data-zh="获奖">Awards</h3>
+        <ul>
+          <li data-en="2nd — McGill Global Health Case Competition" data-zh="亚军 — 麦吉尔全球健康案例竞赛">2nd — McGill Global Health Case Competition</li>
+          <li data-en="2nd — UdeM Polytechnique Wind Turbine" data-zh="亚军 — 蒙特利尔理工风力机竞赛">2nd — UdeM Polytechnique Wind Turbine</li>
+          <li data-en="1st — Stock Market Competition" data-zh="冠军 — 股票市场竞赛">1st — Stock Market Competition</li>
+          <li data-en="Top 8 — National Poetry Recitation" data-zh="全国前八 — 诗歌朗诵大赛">Top 8 — National Poetry Recitation</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 data-en="Beyond Engineering" data-zh="工程之外">Beyond Engineering</h3>
+        <ul>
+          <li data-en="Piano — solo performance (600+ audience)" data-zh="钢琴 — 独奏演出（600+ 观众）">Piano — solo performance (600+ audience)</li>
+          <li data-en="Skiing" data-zh="滑雪">Skiing</li>
+          <li data-en="Badminton — middle school varsity" data-zh="羽毛球 — 初中校队">Badminton — middle school varsity</li>
+          <li data-en="Poetry recitation" data-zh="诗歌朗诵">Poetry recitation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-label" data-en="05 / Education" data-zh="05 / 教育背景">05 / Education</div>
+    <h2 data-en="Where I've studied" data-zh="我求学过的地方">Where I've studied</h2>
+    <div class="edu-list">
+      <div class="edu-item">
+        <div class="edu-year">2024 — Present</div>
+        <div class="edu-content">
+          <div class="edu-school" data-en="Shanghai Jiao Tong University" data-zh="上海交通大学">Shanghai Jiao Tong University</div>
+          <div class="edu-degree"
+               data-en="B.Eng. · Intelligent Perception Engineering"
+               data-zh="工学学士 · 智能感知工程">B.Eng. · Intelligent Perception Engineering</div>
+          <div class="edu-note"
+               data-en="Shanghai Municipal Government Scholarship for Foreign Students (Type B)"
+               data-zh="上海市政府外国留学生奖学金（B 类）">Shanghai Municipal Government Scholarship for Foreign Students (Type B)</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2022 — 2024</div>
+        <div class="edu-content">
+          <div class="edu-school" data-en="Collège Brébeuf, Montréal" data-zh="布雷博夫学院，蒙特利尔">Collège Brébeuf, Montréal</div>
+          <div class="edu-degree"
+               data-en="CÉGEP · Science, Literature and Arts"
+               data-zh="CÉGEP · 理科、文学与艺术">CÉGEP · Science, Literature and Arts</div>
+          <div class="edu-note"
+               data-en="Brébeuf Leadership Scholarship · Multiple university admission scholarships"
+               data-zh="布雷博夫领袖奖学金 · 多所大学入学奖学金">Brébeuf Leadership Scholarship · Multiple university admission scholarships</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label" data-en="06 / Contact" data-zh="06 / 联系方式">06 / Contact</div>
+    <div class="contact-inner">
+      <h2 data-en="Let's connect" data-zh="与我联系">Let's connect</h2>
+      <p class="contact-sub"
+         data-en="Open to research collaborations, internship opportunities, and good conversations."
+         data-zh="科研合作、实习机会，或者就是聊聊天，都欢迎联系。">
+        Open to research collaborations, internship opportunities, and good conversations.
+      </p>
+      <!-- Handshake easter egg -->
+      <div class="hs-wrap" aria-hidden="true">
+        <!-- Left hand: arm exits left, fingers point RIGHT to right edge -->
+        <svg class="hs-lsvg" viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="hg-l" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#a855f7" stop-opacity="0.72"/>
+              <stop offset="100%" stop-color="#e040fb" stop-opacity="0.72"/>
+            </linearGradient>
+            <filter id="hf-l" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="3" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <g fill="url(#hg-l)" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"
+             paint-order="stroke fill" filter="url(#hf-l)">
+            <rect x="0"  y="38" width="58" height="18" rx="7"/>
+            <rect x="52" y="24" width="33" height="46" rx="10"/>
+            <rect x="48" y="7"  width="15" height="26" rx="7"/>
+            <rect x="82" y="24" width="68" height="10" rx="5"/>
+            <rect x="82" y="36" width="68" height="10" rx="5"/>
+            <rect x="82" y="48" width="63" height="10" rx="5"/>
+            <rect x="82" y="60" width="51" height="9"  rx="4"/>
+          </g>
+        </svg>
+
+        <!-- Right hand: mirror — fingers point LEFT to left edge, arm exits right -->
+        <svg class="hs-rsvg" viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="hg-r" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#a855f7" stop-opacity="0.72"/>
+              <stop offset="100%" stop-color="#e040fb" stop-opacity="0.72"/>
+            </linearGradient>
+            <filter id="hf-r" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="3" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <g transform="translate(150,0) scale(-1,1)"
+             fill="url(#hg-r)" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"
+             paint-order="stroke fill" filter="url(#hf-r)">
+            <rect x="0"  y="38" width="58" height="18" rx="7"/>
+            <rect x="52" y="24" width="33" height="46" rx="10"/>
+            <rect x="48" y="7"  width="15" height="26" rx="7"/>
+            <rect x="82" y="24" width="68" height="10" rx="5"/>
+            <rect x="82" y="36" width="68" height="10" rx="5"/>
+            <rect x="82" y="48" width="63" height="10" rx="5"/>
+            <rect x="82" y="60" width="51" height="9"  rx="4"/>
+          </g>
+        </svg>
+
+        <div class="hs-burst"></div>
+      </div>
+
+      <a href="mailto:elizdora2112@gmail.com" class="contact-email">elizdora2112@gmail.com</a>
+      <div class="contact-phone">+86 183 1712 5688</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2025 Elizabeth Pan</span>
+    <span>Shanghai · Montréal</span>
+  </footer>
+
+  <script src="leaflet/leaflet.js"></script>
+  <script src="map.js"></script>
+  <script src="lang.js"></script>
+  <script>
+    (function () {
+      const wrap = document.querySelector('.hs-wrap');
+      if (!wrap) return;
+      const io = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            wrap.classList.add('hs-on');
+            io.disconnect();
+          }
+        },
+        { threshold: 0.55 }
+      );
+      io.observe(wrap);
+    })();
+  </script>
+</body>
+</html>
